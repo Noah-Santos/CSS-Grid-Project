@@ -1,0 +1,109 @@
+.nav{
+    background-color: rgb(185, 105, 105);
+    color:grey;
+    border: 1px solid black;
+}
+.p {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: darkred;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.navt{
+    font-size: 20px;
+    color:rgb(73, 71, 71);
+    text-align: left;
+}
+body{
+    border: 10px solid grey;
+}
+
+.item-a{
+    grid-area: img01;
+}
+.item-b {
+    grid-area: img02;
+}
+.item-c {
+    grid-area: img03;
+}
+.item-d {
+    grid-area: img04;
+}
+.item-e {
+    grid-area: img05;
+}
+.item-f {
+    grid-area: img06;
+}
+.item-g {
+    grid-area: img07;
+}
+.item-h {
+    grid-area: img08;
+}
+.item-i {
+    grid-area: img09;
+}
+.item-j {
+    grid-area: img10;
+}
+.item-k {
+    grid-area: img11;
+}
+.item-l {
+    grid-area: img12;
+}
+.item-m {
+    grid-area: img13;
+}
+.item-n {
+    grid-area: img14;
+}
+.item-o {
+    grid-area: img15;
+}
+.item-p {
+    grid-area: img16;
+}
+.item-q {
+    grid-area: img17;
+}
+.item-r {
+    grid-area: img18;
+}
+.item-s {
+    grid-area: img19;
+}
+.item-t {
+    grid-area: img20;
+}
+.item-u {
+    grid-area: img21;
+}
+.item-v{
+    grid-area: text;
+}
+.container{
+    display:grid;
+    gap:5px;
+    margin:10px;;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "img21 img21 img21 img21 img01"
+    "img21 img21 img21 img21 img02"
+    "img21 img21 img21 img21 img03"
+    "img04 img04 img05 img06 img07"
+    "img08 img09 img09 img10 img11"
+    "img08 img13 img14 img14 img15"
+    "img12 img13 img16 img17 img18"
+    "img19 img20 img20 . text";
+}
+img{
+    width:95%;
+    height: 95%;
+}
