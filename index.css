@@ -2,6 +2,7 @@
     background-color: rgb(185, 105, 105);
     color:grey;
     border: 1px solid black;
+    height: 11px;
 }
 .p {
     font-size: 15px;
@@ -11,11 +12,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    grid-area: text;
 }
 .navt{
-    font-size: 20px;
     color:rgb(73, 71, 71);
     text-align: left;
+    font-size: 10px;
 }
 body{
     border: 10px solid grey;
@@ -84,15 +86,18 @@ body{
 .item-u {
     grid-area: img21;
 }
-.item-v{
+.footer1{
     grid-area: text;
+}
+.footer2{
+    display: none;
 }
 .container{
     display:grid;
-    gap:5px;
-    margin:10px;;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap:1px;
+    margin:5px;;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, auto);
     grid-template-areas: 
     "img21 img21 img21 img21 img01"
     "img21 img21 img21 img21 img02"
@@ -106,4 +111,165 @@ body{
 img{
     width:95%;
     height: 95%;
+}
+
+@media only screen and (max-width:400px) {
+    .item-a {
+        grid-area: facebook;
+        grid-row:2/3;
+        grid-column: 1/2;
+    }
+
+    .item-b {
+        grid-area: twitter;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .item-c {
+        grid-area: mustache_mask;
+        grid-row: 2/4;
+        grid-column: 5/6;
+    }
+
+    .item-d {
+        grid-area: birthday;
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+
+    .item-e {
+        grid-area: joker;
+        grid-row: 4/5;
+        grid-column: 3/4;
+    }
+
+    .item-f {
+        grid-area: rainbow;
+        grid-row: 4/5;
+        grid-column: 4/5;
+    }
+
+    .item-g {
+        grid-area: pinks;
+        grid-row: 4/5;
+        grid-column: 5/6;
+    }
+
+    .item-h {
+        grid-area: music;
+        grid-row: 5/7;
+        grid-column: 1/2;
+    }
+
+    .item-i {
+        grid-area: sale;
+        grid-row: 5/6;
+        grid-column: 2/4;
+    }
+
+    .item-j {
+        grid-area: candy;
+        grid-row: 5/6;
+        grid-column: 4/5;
+    }
+
+    .item-k {
+        grid-area: hats;
+        grid-row: 5/6;
+        grid-column: 5/6;
+    }
+
+    .item-l {
+        grid-area: props;
+        grid-row: 7/8;
+        grid-column: 1/2;
+    }
+
+    .item-m {
+        grid-area: santa;
+        grid-row: 6/8;
+        grid-column: 2/3;
+    }
+
+    .item-n {
+        grid-area: girl;
+        grid-row: 6/7;
+        grid-column: 3/5;
+    }
+
+    .item-o {
+        grid-area: shipping;
+        grid-row: 6/7;
+        grid-column: 5/6;
+    }
+
+    .item-p {
+        grid-area: party1;
+        grid-row: 7/8;
+        grid-column: 3/4;
+    }
+
+    .item-q {
+        grid-area: party2;
+        grid-row: 7/8;
+        grid-column: 4/5;
+    }
+
+    .item-r {
+        grid-area: witches;
+        grid-row: 7/8;
+        grid-column: 5/6;
+    }
+
+    .item-s {
+        grid-area: black_mask;
+        grid-row: 2/4;
+        grid-column: 2/3;
+    }
+
+    .item-t {
+        grid-area: masque;
+        grid-row: 2/4;
+        grid-column: 3/5;
+    }
+
+    .item-u {
+        grid-area: logo;
+        grid-row: 1/2;
+        grid-column: 1/6;
+    }
+    .container {
+        display: grid;
+        gap: 1px;
+        margin: 5px;
+        margin-bottom: 0px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, auto);
+    }
+    .p{
+        color:black;
+        font-size: 50%;
+    }
+    .footer1{
+        display:none;
+    }
+    .footer2{
+        background-color: tan;
+        display: flex;
+        margin-top:0px;
+        border: 1px solid black;
+    }
+    .nav{
+        background-color: tan;
+        color: black;
+        height:11px;
+        margin-top: 0px;
+
+    }
+    .navt{
+        font-size: 10px;
+        color: black;
+        text-align: center;
+    }
 }
